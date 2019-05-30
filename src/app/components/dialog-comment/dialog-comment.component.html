@@ -1,0 +1,18 @@
+<div mat-dialog-content>
+  <p>Add New Comment</p>
+      <mat-form-field>
+    <input matInput [(ngModel)]="comment.name" placeholder="Enter your name" required>
+  </mat-form-field>
+      <mat-form-field>
+    <input matInput [(ngModel)]="comment.email"  type="email" placeholder="Enter your Email" required>
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="comment.body" placeholder="Your Comment" required></textarea>
+  </mat-form-field>
+
+
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button class="reject" (click)="onNoClick()">No Thanks</button>
+  <button mat-raised-button class="confirm" [mat-dialog-close]="comment" cdkFocusInitial>Ok</button>
+</div>

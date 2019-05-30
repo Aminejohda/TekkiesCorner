@@ -1,0 +1,20 @@
+.mat-row {
+	cursor: pointer;
+}
+.mat-card {
+	margin: 15px;
+	margin-left: 10%;
+  width: 75%;
+}
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+  .mat-row:nth-child(even){
+          background-color:rgba(217, 217, 217, 0.2);
+          }
+
+

@@ -1,0 +1,33 @@
+<mat-card class="main-card mat-elevation-z8">
+  <mat-card-header>
+    <mat-card-title> {{post.title}}</mat-card-title>
+    <mat-card-subtitle>{{post.body}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngFor="let j of comment">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{j.name}}</mat-card-title>
+          <mat-card-subtitle>{{j.email}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{j.body}}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div *ngFor="let j of customComments">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>{{j.name}}</mat-card-title>
+          <mat-card-subtitle>{{j.email}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{j.body}}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="openDialog()">Add Comment</button>
+  </mat-card-actions>
+</mat-card>

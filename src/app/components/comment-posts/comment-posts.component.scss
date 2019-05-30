@@ -1,0 +1,19 @@
+.main-card {
+	margin: 15px;
+  width: 50%;
+  margin-left: 25%;
+}
+.example-card {
+  max-width: 550px;
+  margin: 15px;
+}
+.example-card{
+	text-align: left;
+	background-color: whitesmoke;
+}
+.example-card .mat-card-header .mat-card-title{
+	font-size: 15px;
+}
+.mat-card-content{
+	margin: 0 30px;
+}
